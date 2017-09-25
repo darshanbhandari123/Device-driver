@@ -1,0 +1,4 @@
+TARGET = npheap
+obj-m := npheap.o
+npheap-objs := src/core.o src/ioctl.o interface.o
+ccflags-y := -I$(src)/include 
